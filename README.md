@@ -21,11 +21,13 @@
 
 ### fix LocalDB
 
+Error: Unable to connect to (localdb)\MSSQLLocalDB - Due to trigger execution
+
+Fix from <https://stackoverflow.com/questions/66080953/unable-to-connect-to-localdb-mssqllocaldb-due-to-trigger-execution>
+
 SqlLocalDB stop MSSQLLocalDB -k
 SqlLocalDB delete MSSQLLocalDB
 SqlLocalDB create MSSQLLocalDB -s
-
-from <https://stackoverflow.com/questions/66080953/unable-to-connect-to-localdb-mssqllocaldb-due-to-trigger-execution>
 
 Now Login to (LocalDB)\MSSQLLocalDB works.
 
