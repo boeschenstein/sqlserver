@@ -36,7 +36,8 @@ Now Login to (LocalDB)\MSSQLLocalDB works.
 ## Create Login and User
 
 ```sql
---Make sure to use the MASTER database when you create logins and make sure the login is ENABLED.
+-- Make sure to use the MASTER database when you create logins and make sure the login is ENABLED:
+-- Server Properties: Security: Server Authentication: SQL Server and Windows Authentication (is selected)
 
 USE MASTER
 GO
