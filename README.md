@@ -56,5 +56,6 @@ GO
 CREATE USER NewUserName FOR LOGIN NewLogin WITH DEFAULT_SCHEMA = [DBO]
 GO
 
--- todo : grant db_dataread to user/login
+EXEC sp_addrolemember 'db_datareader','NewUserName'
+--EXEC sp_addrolemember 'db_datawriter','NewUserName'
 ```
