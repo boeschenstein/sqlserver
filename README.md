@@ -58,4 +58,6 @@ GO
 
 EXEC sp_addrolemember 'db_datareader','NewUserName'
 --EXEC sp_addrolemember 'db_datawriter','NewUserName'
+
+sqlcmd -U NewLogin -P NewPassword1! -S "(LocalDB)\MSSQLLocalDB"
 ```
